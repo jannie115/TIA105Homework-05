@@ -7,7 +7,7 @@ package work2;
 //DDDD
 //EEEEE
 //FFFFFF
-public class NO7 {
+public class No7 {
 	public static void main(String[] args) {
 		char letter = 'A';
 		for (int i = 1; i <= 6; i++) {

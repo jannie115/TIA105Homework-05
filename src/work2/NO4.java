@@ -2,7 +2,7 @@ package work2;
 
 /*請設計一隻Java程式,輸出結果為以下:
 1 4 9 16 25 36 49 64 81 100 */
-public class NO4 {
+public class No4 {
 	public static void main(String[] args) {
 		for (int n = 1; n <= 10; n++) {
 			System.out.print(n * n + " ");

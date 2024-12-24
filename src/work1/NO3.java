@@ -1,7 +1,7 @@
 package work1;
 
 //03.請由程式算出256559秒為多少天、多少小時、多少分與多少秒
-public class NO3 {
+public class No3 {
 	public static void main(String[] args) {
 		int time = 256559;
 		int day = time / 60 / 60 / 24;
