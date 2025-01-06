@@ -7,7 +7,7 @@ public class No2 {
 		int sum = 0;
 		for (int i = 0; i < 10; i++) {
 			arr[i] = (int) (Math.random() * 101);
-			System.out.print(arr[i]+ " ");
+			System.out.print(arr[i] + " ");
 			sum += arr[i];
 		}
 		System.out.println("平均值:" + (sum / 10));
