@@ -18,11 +18,11 @@ public class HomeworkExt {
 abstract class Pen{
 	//• (1) 兩個屬性：品牌(brand)、價格(price) (封裝設計)
 	private String brand;
-	private int price;
+	private double price;
 	//• (2) 建構子設計：一個無參數與一個根據屬性而設計
 	public Pen() {
 	}
-	public Pen(String brand, int price) {
+	public Pen(String brand, double price) {
 		this.brand = brand;
 		if(price > 0) {
 			this.price = price;
@@ -34,13 +34,13 @@ abstract class Pen{
 	public String getBrand() {
 		return brand;
 	}
-	public int getPrice() {
+	public double getPrice() {
 		return price;
 	}
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	public void setPrice(int price) {
+	public void setPrice(double price) {
 		if(price > 0) {
 			this.price = price;
 		}else {
@@ -59,11 +59,11 @@ class Pencil extends Pen{
 		System.out.println("Pencil削鉛筆再寫");
 	}
 		//• (2) Pencil實際售價為定價8折，InkBrush為定價9折
-	public Pencil(String brand, int price) {
-		super(brand,(int)(price * 0.8));
+	public Pencil(String brand, double price) {
+		super(brand,price * 0.8);
 	}
-	public void setPrice(int price) {
-		super.setPrice((int)(price*0.8));
+	public void setPrice(double price) {
+		super.setPrice(price*0.8);
 	}
 }
 
@@ -73,11 +73,11 @@ class InkBrush extends Pen{
 		System.out.println("InkBrush沾墨汁再寫");
 	}
 	//• (2) Pencil實際售價為定價8折，InkBrush為定價9折
-	public InkBrush(String brand, int price) {
-		super(brand,(int)(price * 0.9));
+	public InkBrush(String brand, double price) {
+		super(brand,price * 0.9);
 	}
-	public void setPrice(int price) {
-		super.setPrice((int)(price*0.9));
+	public void setPrice(double price) {
+		super.setPrice(price*0.9);
 	}
 }
 
